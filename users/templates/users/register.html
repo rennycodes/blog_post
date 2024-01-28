@@ -1,16 +1,16 @@
 {% extends "blog/base.html" %}
 {% block content %}
-    <div class=""content-section>
+    <div class="content-section">
         <form method="POST">
             <!--this is a security token that protects our form-->
             {% csrf_token %}
             <fieldset class="form-group">
-                <legend class="borderbottom mb-4">Join Today</legend>
+                <legend class="border-bottom mb-4">Join Today</legend>
                 <!--this displays our form-->
                 {{ form.as_p }}
             </fieldset>
             <div class="form-group">
-                <botton class="btn btn-outline-info" type="submit">Sign Up</botton>
+                <button class="btn btn-outline-info" type="submit">Sign Up</button>
             </div>
         </form>
         <div class="border-top pt-3">
