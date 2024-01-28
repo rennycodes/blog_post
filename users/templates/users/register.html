@@ -2,10 +2,12 @@
 {% block content %}
     <div class=""content-section>
         <form method="POST">
-            {% csrf_token %}<!--this is a security token that protects our form-->
+            <!--this is a security token that protects our form-->
+            {% csrf_token %}
             <fieldset class="form-group">
                 <legend class="borderbottom mb-4">Join Today</legend>
-                {{ form.as_p }}<!--this displays our form-->
+                <!--this displays our form-->
+                {{ form.as_p }}
             </fieldset>
             <div class="form-group">
                 <botton class="btn btn-outline-info" type="submit">Sign Up</botton>
